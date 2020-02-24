@@ -1,0 +1,131 @@
+﻿<Window x:Class="SudokuSolver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudokuSolver"
+        mc:Ignorable="d"
+        Title="Sudoku Solver" Height="600" Width="450">
+    <Grid x:Name="BoardGrid" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="2" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="6" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="7" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="8" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        
+        <TextBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="6" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="7" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="8" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        
+        
+        <TextBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="2" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="6" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="7" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="8" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+
+        <TextBox Background="AliceBlue" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="3" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="4" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="5" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="6" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="7" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="8" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        
+        <TextBox Background="AliceBlue" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="3" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="4" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="5" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="6" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="7" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="8" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        
+        <TextBox Background="AliceBlue" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="3" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="4" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="5" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="6" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="7" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="8" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+
+        <TextBox Grid.Column="0" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="1" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="2" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="3" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="4" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="5" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="6" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="7" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="8" Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        
+        <TextBox Grid.Column="0" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="1" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="2" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="4" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="5" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="6" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="7" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="8" Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        
+        
+        <TextBox Grid.Column="0" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="1" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="2" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="3" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="4" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Background="AliceBlue" Grid.Column="5" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="6" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="7" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        <TextBox Grid.Column="8" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" FontSize="50" FontFamily="Alex's Writing"/>
+        
+        <Button x:Name="SolveButton" Click="SolveButton_Click" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="9" Margin="0, 5, 0, 0" Content="F I N D  S O L U T I O N" Background="#8DCAFF" Foreground="White" FontSize="25" VerticalContentAlignment="Center" FontFamily="Kenyan Coffee"/>
+        <Button x:Name="ScanImageButton" Click="ScanImageButton_Click" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="9" Margin="0, 5, 0, 0" Content="S C A N  I M A G E" Background="AliceBlue" Foreground="#8dcaff" FontSize="25" VerticalContentAlignment="Center" FontFamily="Kenyan Coffee"/>
+        <Button x:Name="ClearBoardButton" Click="ClearBoardButton_Click" Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="9" Margin="0, 5, 0, 0" Content="C L E A R  B O A R D" Background="#ff404c" Foreground="White" FontSize="25" VerticalContentAlignment="Center" FontFamily="Kenyan Coffee"/>
+    </Grid>
+</Window>
