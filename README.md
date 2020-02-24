@@ -23,3 +23,7 @@ To notify the user which values the program inserted into the board, those value
 ![Screenshot of solved sudoku puzzle](https://github.com/ismaelvazquezjr/Sudoku-Solver/blob/master/solved_screenshot.png)
 
 To actually solve the puzzle, the program implements a backtracking algorithm. Backtracking is a general algorithm for finding all solutions to some computational problems, notably constraint satisfaction problems, that incrementally builds candidates to the solutions, and abandons a candidate as soon as it determines that the candidate cannot possibly be completed to a valid solution.
+
+Here's a video demonstration(YouTube):
+
+[![Youtube Link to demo](http://img.youtube.com/vi/pw6w8KFaC-k/0.jpg)](http://www.youtube.com/watch?v=pw6w8KFaC-k)
